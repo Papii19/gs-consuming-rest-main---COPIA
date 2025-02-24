@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las zapatillas</title>
+</head>
+<body>
+    <h1>Lista de zapatillas</h1>
+    <div th:if="${zapatillas}">
+        <ul>
+            <li th:each="zapatilla : ${zapatillas}">
+                <strong>ID Zapatilla:</strong> <span th:text="${zapatilla.idZapatilla}"></span><br>
+                <strong>Nombre Modelo:</strong> <span th:text="${zapatilla.nombreModelo}"></span><br>
+                <strong>Precio:</strong> <span th:text="${zapatilla.precio}"></span><br>
+                <strong>Talla:</strong> <span th:text="${zapatilla.talla}"></span><br><br>
+                <strong>Id tienda:</strong> <span th:text="${zapatilla.idTienda}"></span><br><br>
+            </li>
+        </ul>
+    </div>
+    <div th:if="${#lists.isEmpty(zapatilla)}">
+        <p>No hay zapatillas disponibles.</p>
+    </div>
+    <div th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+</body>
+</html>

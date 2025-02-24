@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserción Tienda</title>
+</head>
+<body>
+    <h1>Inserción Tienda</h1>
+    <form id="formuMEME" action="http://localhost:8099/api/tienda" method="post">
+        <label for="Nombre_Tienda">Nombre Tienda:</label>
+        <input type="text" id="nombreTienda" name="nombreTienda" required>
+        
+        <label for="Ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+        
+        <label for="URL">URL:</label>
+        <input type="text" id="url" name="url" required>
+        
+        <button type="submit">Insertar Tienda</button>
+    </form>
+    <p>Si quieres volver al index pulsa el boton</p>
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+
+</body>
+</html>

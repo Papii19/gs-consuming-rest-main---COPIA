@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrar Tienda</title>
+</head>
+<body>
+    <h1>Borrar Tienda</h1>
+    <form name="formuMEME" action="/borrar" method="get">
+
+        <!-- Campo ID -->
+        <label for="id">ID:</label><br>
+        <input type="number" id="id" name="id" placeholder="Introduce la id de la Tienda" required><br><br>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Eliminar Tienda</button>
+    </form>
+
+    <!-- Resultado de la eliminación -->
+    <h2>Resultado de la eliminación:</h2>
+    <p>${out}</p> <!-- Este es el mensaje que se muestra después de la eliminación -->
+    <p>Si quieres volver al index pulsa el boton</p>
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+</body>
+</html>

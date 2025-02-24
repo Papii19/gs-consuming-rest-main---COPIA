@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Inserción Tienda</title>
+</head>
+<body>
+    <h1>{{out}}</h1>  <!-- Mensaje de éxito -->
+
+    <h2>Datos de la Tienda Insertada:</h2>
+    <div th:if="${tiendas}">
+        <ul>
+            <li th:each="tienda : ${tiendas}">
+                <strong>ID Tienda:</strong> <span th:text="${tienda.id}"></span><br>
+                <strong>Nombre Tienda:</strong> <span th:text="${tienda.nombreTienda}"></span><br>
+                <strong>Ubicación:</strong> <span th:text="${tienda.ubicacion}"></span><br>
+                <strong>URL:</strong> <span th:text="${tienda.URL}"></span><br><br>
+            </li>
+        </ul>
+    </div>
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+
+</body>
+</html>

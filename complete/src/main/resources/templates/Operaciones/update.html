@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Tienda</title>
+</head>
+<body>
+    <h1>Actualizar Tienda</h1>
+    <form action="/api/tienda" method="post">
+            <label for="id">ID de la Tienda:</label>
+            <input type="number" id="id" name="id" required >
+        
+            <label for="nombreTienda">Nombre Tienda:</label>
+            <input type="text" id="nombreTienda" name="nombreTienda" required>
+        
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+        
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required>
+        
+            <button type="submit">Actualizar Tienda</button>
+        </form>
+</body>
+<p>Si quieres volver al index pulsa el boton</p>
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+</html>

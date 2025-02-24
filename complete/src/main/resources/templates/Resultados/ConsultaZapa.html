@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="|${out}|"></h1>
+    <p><strong>ID Zapatilla:</strong> <span th:text="${idZapatilla}"></span></p>
+    <p><strong>Nombre Modelo:</strong> <span th:text="${nombremodelo}"></span></p>    
+    <p><strong>Precio:</strong> <span th:text="${precio}"></span></p>
+    <p><strong>Talla:</strong> <span th:text="${talla}"></span></p>
+    <p><strong>Id de Tienda:</strong> <span th:text="${idtienda}"></span></p>
+
+    <a href="http://localhost:8098/inicio"><button>Volver al index</button></a>
+
+</body>
+</html>
